@@ -29,11 +29,7 @@
             );
 
             $this->dial = new CircularLinkedList(100);
-
-            while ($this->dial->current()->data !== 50)
-            {
-                $this->dial->next();
-            }
+            $this->dial->forward(50);
 		}
 
 		public function run(): Result
