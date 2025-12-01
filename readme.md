@@ -10,4 +10,4 @@ https://adventofcode.com/2025/
 
 ##### Day 01
 
-Got to use the CircularLinkedList from the Cruxoft Data Structures package again! Thought part 2 might require an alternative but was an instant result.
+Got to use the CircularLinkedList from the Cruxoft AoC utilities package again! Thought part 2 might require an alternative but was an instant result.
