@@ -37,10 +37,7 @@
 				$emergency = $bank->joltage(12);
 				$result->part2 += $emergency;
 
-				if ($this->verbose)
-				{
-					$this->output($bank . " " . $joltage . " " . $emergency);
-				}
+				$this->output($bank . " " . $joltage . " " . $emergency);
 			}
 
 			return $result;
