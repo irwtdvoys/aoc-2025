@@ -10,5 +10,9 @@
 	{
 		"day": 3,
 		"class": "Lobby"
+	},
+	{
+		"day": 4,
+		"class": "PrintingDepartment"
 	}
 ]
