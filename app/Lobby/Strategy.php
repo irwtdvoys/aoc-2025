@@ -1,9 +1,9 @@
 <?php
     namespace App\Lobby;
 
-	enum Strategy: string
+	enum Strategy
 	{
-		case SlidingWindow = "slidingWindow";
-		case MonotonicStack = "monotonicStack";
+		case SlidingWindow;
+		case MonotonicStack;
 	}
 ?>

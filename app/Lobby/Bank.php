@@ -20,7 +20,10 @@
 
 		public function joltage(int $size = 2, Strategy $strategy = Strategy::SlidingWindow): int
 		{
-			return $this->{$strategy->value}($size);
+			return match ($strategy) {
+				Strategy::SlidingWindow => $this->slidingWindow($size),
+				Strategy::MonotonicStack => $this->monotonicStack($size),
+			};
 		}
 
 		private function slidingWindow(int $size = 2): int
