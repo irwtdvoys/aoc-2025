@@ -6,7 +6,8 @@
 
 	include_once(ROOT . "bin/init.php");
 
-	// ./bin/aoc tools:fetch --day=1
+    // Initialise new day: ./bin/aoc tools:init --day=1
+	// Fetch puzzle input: ./bin/aoc tools:fetch --day=1
 
 	if (count($argv) <= 1)
 	{
