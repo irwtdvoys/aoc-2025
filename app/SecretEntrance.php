@@ -35,11 +35,7 @@
 		public function run(): Result
 		{
 			$result = new Result(0, 0);
-
-            if ($this->verbose)
-            {
-                $this->output("The dial starts by pointing at " . $this->dial->current()->data . ".");
-            }
+            $this->output("The dial starts by pointing at " . $this->dial->current()->data . ".");
 
             foreach ($this->instructions as $instruction)
             {
@@ -69,13 +65,10 @@
                     $result->part1++;
                 }
 
-                if ($this->verbose)
-                {
-                    $output = "The dial is rotated " . $instruction . " to point at " . $this->dial->current()->data;
-                    $output .= $count > 0 ? " (" . $count . " times)" : ".";
+				$output = "The dial is rotated " . $instruction . " to point at " . $this->dial->current()->data;
+				$output .= $count > 0 ? " (" . $count . " times)" : ".";
 
-                    $this->output($output);
-                }
+				$this->output($output);
             }
 
 			return $result;
