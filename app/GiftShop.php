@@ -5,12 +5,12 @@
 
 	use AoC\Helper;
 	use AoC\Result;
+	use AoC\Utils\Diet;
 	use AoC\Utils\Range;
 
 	class GiftShop extends Helper
 	{
-		/** @var Range[] */
-		private array $ranges;
+		private Diet $ranges;
 
 		public function __construct(int $day, bool $verbose = false, ?string $override = null)
 		{
@@ -18,29 +18,30 @@
 
 			$raw = parent::load($override);
 
-			$this->ranges = array_map(
-				fn($line) => new Range(...array_map("intval", explode("-", $line))),
-				explode(",", $raw)
-			);
+			$this->ranges = new Diet();
+
+			foreach (explode(",", $raw) as $line)
+			{
+				$this->ranges->add(new Range(...array_map("intval", explode("-", $line))));
+			}
 		}
 
 		public function run(): Result
 		{
 			$result = new Result(0, 0);
 
-			foreach ($this->ranges as $range)
-			{
-				for ($value = $range->min; $value <= $range->max; $value++)
-				{
-					if (preg_match('/^(\d+)\1$/', (string)$value))
-					{
-						$result->part1 += $value;
-					}
+			$this->output($this->ranges);
 
-					if (preg_match('/^(\d+)\1+$/', (string)$value))
-					{
-						$result->part2 += $value;
-					}
+			foreach ($this->ranges as $value)
+			{
+				if (preg_match('/^(\d+)\1$/', (string)$value))
+				{
+					$result->part1 += $value;
+				}
+
+				if (preg_match('/^(\d+)\1+$/', (string)$value))
+				{
+					$result->part2 += $value;
 				}
 			}
 
