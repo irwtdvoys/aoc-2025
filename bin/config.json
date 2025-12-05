@@ -14,5 +14,9 @@
 	{
 		"day": 4,
 		"class": "PrintingDepartment"
+	},
+	{
+		"day": 5,
+		"class": "Cafeteria"
 	}
 ]
