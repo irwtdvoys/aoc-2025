@@ -2,13 +2,14 @@
 
 https://adventofcode.com/2025/
 
-| Day | Name                |      Part 1 |          Part 2 | Time       | Memory     |
-|----:|:--------------------|------------:|----------------:|:-----------|:-----------|
-|   1 | Secret Entrance     |        1102 |            6172 | 42.3287ms  | 1.8947 MiB |
-|   2 | Gift Shop           | 40214376723 |     50793864718 | 207.2846ms | 1.2513 MiB |
-|   3 | Lobby               |       17443 | 172167155440541 | 1.9539ms   | 2.4475 MiB |
-|   4 | Printing Department |        1395 |            8451 | 162.48ms   | 2.8751 MiB |
-|   5 | Cafeteria           |         821 | 344771884978261 | 1.6384ms   | 1.2505 MiB |
+| Day | Name                |        Part 1 |          Part 2 | Time       | Memory     |
+|----:|:--------------------|--------------:|----------------:|:-----------|:-----------|
+|   1 | Secret Entrance     |          1102 |            6172 | 42.3287ms  | 1.8947 MiB |
+|   2 | Gift Shop           |   40214376723 |     50793864718 | 207.2846ms | 1.2513 MiB |
+|   3 | Lobby               |         17443 | 172167155440541 | 1.9539ms   | 2.4475 MiB |
+|   4 | Printing Department |          1395 |            8451 | 162.48ms   | 2.8751 MiB |
+|   5 | Cafeteria           |           821 | 344771884978261 | 1.6384ms   | 1.2505 MiB |
+|   6 | Trash Compactor     | 4693419406682 |   9029931401920 | 9.3769ms   | 3.4289 MiB |
 
 ## Notes
 
@@ -31,3 +32,7 @@ Simple grid traversal and a cheeky little do-while loop.
 ##### Day 05: Cafeteria
 
 Turns out I accidentally created a Discrete Interval Encoding Tree, so I pulled it out into my aoc package incase I need it again!
+
+##### Day 06: Trash Compactor
+
+Well, regex failed me on the parsing today although it did simplify things a bit. Part 2 was a fun challenge to get right, I loaded the raw row data into a grid and then rotated it 90 degrees to get the correct orientation to parse line by line.
