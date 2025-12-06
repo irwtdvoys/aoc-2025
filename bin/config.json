@@ -18,5 +18,9 @@
 	{
 		"day": 5,
 		"class": "Cafeteria"
+	},
+	{
+		"day": 6,
+		"class": "TrashCompactor"
 	}
 ]
