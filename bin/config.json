@@ -22,5 +22,9 @@
 	{
 		"day": 6,
 		"class": "TrashCompactor"
+	},
+	{
+		"day": 7,
+		"class": "Laboratories"
 	}
 ]
