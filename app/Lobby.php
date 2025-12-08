@@ -10,7 +10,7 @@
 
 	class Lobby extends Helper
 	{
-		/** @var Range[] */
+		/** @var Bank[] */
 		private array $banks;
 
 		public function __construct(int $day, bool $verbose = false, ?string $override = null)
