@@ -30,9 +30,9 @@
 			{
 				$found = [];
 
-				foreach ($this->grid->dimensions->x as $x)
+				foreach ($this->grid->dimensions->x() as $x)
 				{
-					foreach ($this->grid->dimensions->y as $y)
+					foreach ($this->grid->dimensions->y() as $y)
 					{
 						if ($this->grid->get($x, $y) === "@")
 						{
