@@ -30,9 +30,9 @@
 			{
 				$found = [];
 
-				for ($x = $this->grid->dimensions->x->min; $x <= $this->grid->dimensions->x->max; $x++)
+				foreach ($this->grid->dimensions->x as $x)
 				{
-					for ($y = $this->grid->dimensions->y->min; $y <= $this->grid->dimensions->y->max; $y++)
+					foreach ($this->grid->dimensions->y as $y)
 					{
 						if ($this->grid->get($x, $y) === "@")
 						{
