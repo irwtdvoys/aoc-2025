@@ -6,7 +6,7 @@
 	use AoC\Helper;
 	use AoC\Result;
 	use AoC\Utils\Grid;
-	use AoC\Utils\Position2d;
+	use AoC\Utils\Position;
 
 	class PrintingDepartment extends Helper
 	{
@@ -41,7 +41,7 @@
 							if ($count < 4)
 							{
 								$this->grid->set($x, $y, "x");
-								$found[] = new Position2d($x, $y);
+								$found[] = new Position([$x, $y]);
 							}
 						}
 					}
@@ -70,7 +70,7 @@
 		{
 			foreach ($locations as $location)
 			{
-				$this->grid->set($location->x, $location->y, ".");
+				$this->grid->set($location->x(), $location->y(), ".");
 			}
 		}
 
