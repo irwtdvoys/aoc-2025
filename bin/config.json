@@ -26,5 +26,9 @@
 	{
 		"day": 7,
 		"class": "Laboratories"
+	},
+	{
+		"day": 8,
+		"class": "Playground"
 	}
 ]
