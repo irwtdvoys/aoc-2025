@@ -58,7 +58,7 @@
 
 			$index = count($this->problems2) - 1;
 
-			foreach ($grid->dimensions->y as $y)
+			foreach ($grid->dimensions->y() as $y)
 			{
 				$value = trim(implode("", $grid->row($y)));
 

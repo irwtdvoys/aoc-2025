@@ -28,7 +28,7 @@
 
 			$this->output($this->grid);
 
-			foreach ($this->grid->dimensions->y as $y)
+			foreach ($this->grid->dimensions->y() as $y)
 			{
 				$this->output("Processing row " . $y);
 
