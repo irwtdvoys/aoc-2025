@@ -2,16 +2,17 @@
 
 https://adventofcode.com/2025/
 
-| Day | Name                |         Part 1 |          Part 2 | Time        |      Memory |
-|----:|:--------------------|---------------:|----------------:|:------------|------------:|
-|   1 | Secret Entrance     |           1102 |            6172 | 42.3287ms   |  1.8947 MiB |
-|   2 | Gift Shop           |    40214376723 |     50793864718 | 207.2846ms  |  1.2513 MiB |
-|   3 | Lobby               |          17443 | 172167155440541 | 1.9539ms    |  2.4475 MiB |
-|   4 | Printing Department |           1395 |            8451 | 162.48ms    |  2.8751 MiB |
-|   5 | Cafeteria           |            821 | 344771884978261 | 1.6384ms    |  1.2505 MiB |
-|   6 | Trash Compactor     |  4693419406682 |   9029931401920 | 9.3769ms    |  3.4289 MiB |
-|   7 | Laboratories        |           1553 |  15811946526915 | 5.0267ms    |  2.9952 MiB |
-|   8 | Playground          |         163548 |       772452514 | 420.0515ms  | 52.2304 MiB |
+| Day | Name                |        Part 1 |          Part 2 | Time       |      Memory |
+|----:|:--------------------|--------------:|----------------:|:-----------|------------:|
+|   1 | Secret Entrance     |          1102 |            6172 | 42.3287ms  |  1.8947 MiB |
+|   2 | Gift Shop           |   40214376723 |     50793864718 | 207.2846ms |  1.2513 MiB |
+|   3 | Lobby               |         17443 | 172167155440541 | 1.9539ms   |  2.4475 MiB |
+|   4 | Printing Department |          1395 |            8451 | 162.48ms   |  2.8751 MiB |
+|   5 | Cafeteria           |           821 | 344771884978261 | 1.6384ms   |  1.2505 MiB |
+|   6 | Trash Compactor     | 4693419406682 |   9029931401920 | 9.3769ms   |  3.4289 MiB |
+|   7 | Laboratories        |          1553 |  15811946526915 | 5.0267ms   |  2.9952 MiB |
+|   8 | Playground          |        163548 |       772452514 | 420.0515ms | 52.2304 MiB |
+|   9 | Movie Theater       |    4737096935 |      1644094530 | 2.953s     |  1.7637 MiB |
 
 ## Notes
 
@@ -46,3 +47,7 @@ Merging a beam part way along a previous beam was tricky with my first attempt, 
 ##### Day 08: Playground
 
 Added a rudimentary DSU implementation to the AoC package. Even without optimisations, it's pretty fast due to PHP's arrays. Also added N-Dimensional Vector and Position classes to the package. Couldn't find a way to reduce the memory usage today, though. It's a lot of possible connections!
+
+##### Day 09: Movie Theater
+
+Slow runner today a I used a brute-force approach to part 2, added some aggressive caching and got the time down from 6 to 3 seconds. Might have to revisit this one later to see if I can do better.
