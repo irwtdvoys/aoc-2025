@@ -18,7 +18,7 @@ https://adventofcode.com/2025/
 
 ##### Day 01: Secret Entrance
 
-Got to use the CircularLinkedList from the Cruxoft AoC utilities package again! Thought part 2 might require an alternative but was an instant result.
+Got to use the CircularLinkedList from my AoC utilities package again! Thought part 2 might require an alternative but was an instant result.
 
 ##### Day 02: Gift Shop
 
@@ -34,7 +34,7 @@ Simple grid traversal and a cheeky little do-while loop.
 
 ##### Day 05: Cafeteria
 
-Turns out I accidentally created a Discrete Interval Encoding Tree, so I pulled it out into my aoc package incase I need it again!
+Turns out I accidentally created a Discrete Interval Encoding Tree, so I pulled it out into my aoc package in case I need it again!
 
 ##### Day 06: Trash Compactor
 
@@ -50,4 +50,4 @@ Added a rudimentary DSU implementation to the AoC package. Even without optimisa
 
 ##### Day 09: Movie Theater
 
-Slow runner today a I used a brute-force approach to part 2, added some aggressive caching and got the time down from 6 to 3 seconds. Might have to revisit this one later to see if I can do better.
+Slow runner today as I used a brute-force approach to part 2, added some aggressive caching and got the time down from 6 to 3 seconds. Might have to revisit this one later to see if I can do better.
