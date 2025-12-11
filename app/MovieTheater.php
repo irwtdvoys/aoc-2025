@@ -63,17 +63,22 @@
 			{
 				$this->output("Caching line segment bounds for: " . $line);
 				$this->cache[(string)$line] = [
-					"segMinX" => min($line->start->x(), $line->end->x()),
-					"segMaxX" => max($line->start->x(), $line->end->x()),
-					"segMinY" => min($line->start->y(), $line->end->y()),
-					"segMaxY" => max($line->start->y(), $line->end->y())
+					"minX" => min($line->start->x(), $line->end->x()),
+					"maxX" => max($line->start->x(), $line->end->x()),
+					"minY" => min($line->start->y(), $line->end->y()),
+					"maxY" => max($line->start->y(), $line->end->y())
 				];
 			}
 
 			$pointData = $this->pointCache[$pointKey];
 			$lineData = $this->cache[$lineKey];
 
-			return $lineData['segMaxX'] > $pointData['minX'] && $lineData['segMinX'] < $pointData['maxX'] && $lineData['segMaxY'] > $pointData['minY'] && $lineData['segMinY'] < $pointData['maxY'];
+			return !(
+				$lineData['minX'] >= $pointData['maxX'] ||
+				$lineData['maxX'] <= $pointData['minX'] ||
+				$lineData['minY'] >= $pointData['maxY'] ||
+				$lineData['maxY'] <= $pointData['minY']
+			);
 		}
 
 		public function run(): Result
