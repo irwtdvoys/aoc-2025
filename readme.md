@@ -13,6 +13,7 @@ https://adventofcode.com/2025/
 |   7 | Laboratories        |          1553 |  15811946526915 | 5.0267ms   |  2.9952 MiB |
 |   8 | Playground          |        163548 |       772452514 | 420.0515ms | 52.2304 MiB |
 |   9 | Movie Theater       |    4737096935 |      1644094530 | 2.953s     |  1.7637 MiB |
+|  11 | Reactor             |           511 | 458618114529380 | 756.266μs  |  1.6443 MiB |
 
 ## Notes
 
@@ -51,3 +52,7 @@ Added a rudimentary DSU implementation to the AoC package. Even without optimisa
 ##### Day 09: Movie Theater
 
 Slow runner today as I used a brute-force approach to part 2, added some aggressive caching and got the time down from 6 to 3 seconds. Might have to revisit this one later to see if I can do better.
+
+##### Day 11: Reactor
+
+Nice simple recursive DFS, tried to avoid memoization with part 2, but it was *required*!
